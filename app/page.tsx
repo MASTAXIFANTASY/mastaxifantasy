@@ -25,7 +25,7 @@ export default function Home() {
       </div>
 
       <div style={{ marginTop: '2rem' }}>
-        <a href="https://t.me/mastaxifantasy" target="_blank" rel="noopener noreferrer" style={{
+        <a href="https://t.me/MASTAXIFANTASYCOM" target="_blank" rel="noopener noreferrer" style={{
           background: '#FF1744',
           color: '#fff',
           padding: '0.75rem 1.5rem',
