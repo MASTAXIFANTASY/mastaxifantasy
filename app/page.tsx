@@ -80,3 +80,65 @@ export default function Home() {
     </main>
   );
 }
+export default function PitchReportPage() {
+  return (
+    <main style={{ padding: '2rem', background: '#f9f9f9', minHeight: '100vh' }}>
+      <h1 style={{ color: '#d90429', textAlign: 'center' }}>Today’s Pitch Report</h1>
+      <div style={{
+        background: 'white',
+        padding: '1rem',
+        marginTop: '2rem',
+        borderLeft: '6px solid #ff1744',
+        borderRadius: '8px',
+        boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
+      }}>
+        <p><strong>Match:</strong> KKR vs GT</p>
+        <p><strong>Venue:</strong> Eden Gardens</p>
+        <p><strong>Pitch:</strong> Batting-friendly, flat wicket</p>
+        <p><strong>Weather:</strong> Clear skies – 29°C</p>
+      </div>
+    </main>
+  );
+}
+export default function StatsPage() {
+  return (
+    <main style={{ padding: '2rem', background: '#f0f0f0', minHeight: '100vh' }}>
+      <h1 style={{ color: '#0f766e', textAlign: 'center' }}>Key Player Stats</h1>
+      <div style={{
+        background: 'white',
+        padding: '1rem',
+        marginTop: '2rem',
+        borderLeft: '6px solid #10b981',
+        borderRadius: '8px',
+        boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
+      }}>
+        <ul style={{ paddingLeft: '1.2rem' }}>
+          <li><strong>Jaiswal:</strong> Avg: 42.3 | SR: 153</li>
+          <li><strong>Rashid:</strong> 17 wickets | Econ: 6.7</li>
+          <li><strong>Marco Jansen:</strong> Best left-arm differential</li>
+        </ul>
+      </div>
+    </main>
+  );
+}
+export default function TeamPredictions() {
+  return (
+    <main style={{ padding: '2rem', background: '#fff7ed', minHeight: '100vh' }}>
+      <h1 style={{ color: '#f97316', textAlign: 'center' }}>Today’s Final Dream11 Teams</h1>
+      <div style={{
+        background: 'white',
+        padding: '1rem',
+        marginTop: '2rem',
+        borderLeft: '6px solid #fb923c',
+        borderRadius: '8px',
+        boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
+      }}>
+        <p><strong>Team 1:</strong> Jaiswal (C), Rashid (VC), Narine, Shubman, Klaasen</p>
+        <p><strong>Team 2:</strong> Marco Jansen (VC), Gill (C), Russell, Gurbaz, Noor</p>
+        <p style={{ marginTop: '1rem', fontStyle: 'italic', color: '#c2410c' }}>
+          Final teams will be locked at 6:45 PM — check our Telegram for updates.
+        </p>
+      </div>
+    </main>
+  );
+}
