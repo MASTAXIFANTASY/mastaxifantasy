@@ -1,79 +1,82 @@
 export default function Home() {
   return (
     <main style={{
-      backgroundColor: '#1e1e1e',
-      color: '#FFD700',
-      padding: '3rem',
-      fontFamily: 'Arial, sans-serif',
-      textAlign: 'center'
+      backgroundColor: '#f8f9fa',
+      padding: '2rem',
+      fontFamily: 'Segoe UI, sans-serif',
+      color: '#333',
     }}>
-      <h1 style={{ color: '#FF1744' }}>MASTAXIFANTASY</h1>
-      <p>Your ultimate fantasy cricket destination!</p>
-
-      <div style={{
-        background: '#2c2c2c',
-        border: '2px solid #FFD700',
-        borderRadius: '10px',
-        padding: '1.5rem',
-        marginTop: '2rem',
-        maxWidth: '600px',
-        marginLeft: 'auto',
-        marginRight: 'auto'
+      <h1 style={{ 
+        textAlign: 'center', 
+        color: '#d90429', 
+        fontSize: '3rem', 
+        marginBottom: '1rem' 
       }}>
-        <h2>Today's IPL Pitch Report</h2>
-        <p>Stay tuned for live updates...</p>
+        MASTAXIFANTASY
+      </h1>
+      <p style={{ textAlign: 'center', fontSize: '1.2rem' }}>
+        Real Stats. Real Teams. Real Wins.
+      </p>
+
+      {/* Pitch Report */}
+      <div style={{
+        backgroundColor: '#ffffff',
+        borderLeft: '5px solid #d90429',
+        boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
+        borderRadius: '8px',
+        padding: '1rem',
+        marginTop: '2rem'
+      }}>
+        <h2 style={{ color: '#0077b6' }}>Today's Pitch Report</h2>
+        <p><strong>Match:</strong> KKR vs GT</p>
+        <p><strong>Venue:</strong> Eden Gardens</p>
+        <p><strong>Pitch:</strong> Batting-friendly, flat wicket</p>
+        <p><strong>Weather:</strong> Clear skies – 29°C</p>
       </div>
 
-      <div style={{ marginTop: '2rem' }}>
-        <a href="https://t.me/MASTAXIFANTASYCOM" target="_blank" rel="noopener noreferrer" style={{
-          background: '#FF1744',
+      {/* Key Stats */}
+      <div style={{
+        backgroundColor: '#ffffff',
+        borderLeft: '5px solid #52b788',
+        boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
+        borderRadius: '8px',
+        padding: '1rem',
+        marginTop: '2rem'
+      }}>
+        <h2 style={{ color: '#40916c' }}>Key Player Stats</h2>
+        <ul style={{ paddingLeft: '1rem' }}>
+          <li>Jaiswal – Avg: 42.3 | SR: 153</li>
+          <li>Rashid – 17 wickets | Econ: 6.7</li>
+          <li>Marco Jansen – Best left-arm differential</li>
+        </ul>
+      </div>
+
+      {/* Telegram CTA */}
+      <div style={{ textAlign: 'center', marginTop: '2.5rem' }}>
+        <a href="https://t.me/MASTAXIFANTASYCOM" target="_blank" style={{
+          backgroundColor: '#ef233c',
           color: '#fff',
-          padding: '0.75rem 1.5rem',
-          borderRadius: '5px',
+          padding: '1rem 2rem',
+          borderRadius: '50px',
+          fontWeight: 'bold',
+          fontSize: '1.1rem',
           textDecoration: 'none',
-          fontWeight: 'bold'
+          boxShadow: '0 4px 12px rgba(0,0,0,0.15)'
         }}>
-          Join Our Telegram
+          Join Us on Telegram
         </a>
       </div>
 
-      <p style={{ marginTop: '2rem', fontSize: '0.9rem' }}>
-        Contact: <a href="mailto:mastaxifantasy@gmail.com" style={{ color: '#FFD700' }}>mastaxifantasy@gmail.com</a>
-      </p>
+      {/* Footer */}
+      <footer style={{
+        marginTop: '3rem',
+        paddingTop: '1rem',
+        textAlign: 'center',
+        fontSize: '0.9rem',
+        color: '#555'
+      }}>
+        Contact: <a href="mailto:mastaxifantasy@gmail.com" style={{ color: '#0077b6' }}>mastaxifantasy@gmail.com</a>
+      </footer>
     </main>
-  )
-}
-export default function Stats() {
-  return (
-    <main style={{ padding: '2rem', backgroundColor: '#121212', color: '#FFD700' }}>
-      <h1 style={{ color: '#FF1744' }}>Top Player Stats</h1>
-      <ul style={{ paddingLeft: '1rem' }}>
-        <li><strong>Jaiswal</strong> – Avg: 42.3 – SR: 153</li>
-        <li><strong>Rinku Singh</strong> – Avg: 36.2 – SR: 145</li>
-        <li><strong>Rashid Khan</strong> – Wickets: 17 – Econ: 6.7</li>
-        <li><strong>Marco Jansen</strong> – Strike Bowler – Left arm angle threat</li>
-        <li>More auto-updating stats coming soon...</li>
-      </ul>
-    </main>
-  )
-}
-export default function TeamPredictions() {
-  return (
-    <main style={{ padding: '2rem', backgroundColor: '#121212', color: '#FFD700' }}>
-      <h1 style={{ color: '#FF1744' }}>Today's Dream11 Teams</h1>
-      <p>Entry: ₹49 Mega | Prize: ₹4 Crore</p>
-
-      <ul style={{ paddingLeft: '1rem' }}>
-        <li><strong>Team 1:</strong> Jaiswal (C), Rashid (VC), Rinku, Narine...</li>
-        <li><strong>Team 2:</strong> Marco Jansen (C), Gurbaz, Shreyas Iyer...</li>
-        <li><strong>Team 3:</strong> Balanced safe core with explosive picks</li>
-      </ul>
-
-      <p>Full 7 Teams will be uploaded by 6:45 PM IST daily.</p>
-      <p>Join Telegram for Live Final Updates:</p>
-      <a href="https://t.me/MASTAXIFANTASYCOM" target="_blank" style={{
-        color: '#FF1744', textDecoration: 'underline'
-      }}>@MASTAXIFANTASYCOM</a>
-    </main>
-  )
+  );
 }
